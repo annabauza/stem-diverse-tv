@@ -17,6 +17,25 @@ STEM Diverse TV is a project which gather and provide inspiring, motivating, inf
 
 To setup the project locally follow the instructions:
 
+Please make a virtual environment and run the following commands.
+```
+virtualenv venv --python=python3
+source ./venv/bin/activate
+pip3 install -r requirements.txt 
+```
+
+- Please download Firebase Admin SDK service json file from Firebase Console and put that in project's root directory. Rename file to firebase_cred.json
+- Make .env file from given .env.template file and add details like API_KEY, which is a web api key from firebase. Find your project's web api key in project's overview tab on firebase console.
+
+After this, execute:
+```
+python run.py
+```
+or
+```
+python3 run.py
+```
+
 #### Fork
 
 _**Note**_: *This is only needed if you want to contribute to the project.*
